@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Users, School, Home, GraduationCap, ShoppingCart } from "lucide-react";
+import heroImage from "@assets/essed_1756070556456.png";
 
 interface HeroSectionProps {
   onCTAClick: () => void;
@@ -46,10 +47,10 @@ export default function HeroSection({ onCTAClick }: HeroSectionProps) {
           
           <div className="text-center">
             <img 
-              src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
-              alt="Crianças sorrindo e colorindo livros cristãos" 
+              src={heroImage} 
+              alt="Profissional trabalhando com materiais educativos" 
               className="rounded-2xl shadow-2xl mx-auto transform hover:scale-105 transition-transform w-full max-w-lg"
-              data-testid="img-hero-children"
+              data-testid="img-hero-professional"
             />
           </div>
         </div>
