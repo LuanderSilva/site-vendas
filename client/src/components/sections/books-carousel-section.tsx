@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ShoppingCart, Star } from "lucide-react";
+import noahArkImage from "@assets/Gemini_Generated_Image_zif1vbzif1vbzif1_1756074374591.png";
 
 interface BooksCarouselSectionProps {
   onCTAClick: () => void;
@@ -10,8 +11,8 @@ export default function BooksCarouselSection({ onCTAClick }: BooksCarouselSectio
     {
       title: "A Arca de Noé",
       description: "Aventura épica de fé e obediência com animais adoráveis para colorir.",
-      pages: 15,
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=500",
+      pages: 23,
+      image: noahArkImage,
       isPopular: false
     },
     {
