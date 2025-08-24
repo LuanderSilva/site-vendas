@@ -20,7 +20,7 @@ export default function Home() {
 
   useEffect(() => {
     // SEO metadata
-    document.title = "Bíblia Goods - ColoriMente | Livros de Colorir Cristãos";
+    document.title = "Bíblia Goods - Pequenos Artistas | Livros de Colorir Cristãos";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute('content', 'Desenvolvimento infantil na hora de pintar com foco, disciplina e criatividade. Livros de colorir cristãos para células, escola dominical e devocional familiar.');
@@ -29,25 +29,6 @@ export default function Home() {
 
   return (
     <div className="font-inter bg-gray-50">
-      {/* Header */}
-      <header className="bg-white shadow-lg sticky top-0 z-50" data-testid="header">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-brand-blue rounded-full flex items-center justify-center">
-              <Book className="text-white" size={20} />
-            </div>
-            <h1 className="text-2xl font-bold text-brand-blue">ColoriMente</h1>
-          </div>
-          <Button 
-            onClick={scrollToPricing}
-            className="bg-brand-green text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition-colors"
-            data-testid="button-header-cta"
-          >
-            Quero Bíblia Goods
-          </Button>
-        </div>
-      </header>
-
       {/* Main Content */}
       <main>
         <HeroSection onCTAClick={scrollToPricing} />
@@ -66,11 +47,11 @@ export default function Home() {
             <div className="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
               <Book className="text-white" size={24} />
             </div>
-            <h3 className="text-2xl font-bold">ColoriMente</h3>
+            <h3 className="text-2xl font-bold">Pequenos Artistas</h3>
           </div>
           <p className="text-blue-100 mb-6">Desenvolvendo fé, criatividade e aprendizado através da arte</p>
           <div className="border-t border-blue-400 pt-6">
-            <p className="text-blue-200">© 2025 ColoriMente | Todos os direitos reservados.</p>
+            <p className="text-blue-200">© 2025 Pequenos Artistas | Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>
