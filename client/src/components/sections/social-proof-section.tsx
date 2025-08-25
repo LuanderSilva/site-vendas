@@ -6,7 +6,7 @@ export default function SocialProofSection() {
       name: "Ana Paula",
       rating: 5,
       comment: "Meus filhos adoraram! Agora nosso devocional em família ficou muito mais divertido e participativo. Recomendo!",
-      avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=60&h=60"
+      avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=60&h=60"
     },
     {
       name: "Carlos Silva",
