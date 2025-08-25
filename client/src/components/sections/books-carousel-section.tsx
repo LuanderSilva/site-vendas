@@ -5,6 +5,8 @@ import noahArkImage from "@assets/Gemini_Generated_Image_zif1vbzif1vbzif1_175607
 import davidGoliathImage from "@assets/Davi e Golias_1756076356614.jpeg";
 import babyMosesImage from "@assets/bebemoises_1756076267525.jpeg";
 import versiculosImage from "@assets/versiculos_1756076911389.jpeg";
+import jesusImage from "@assets/Jesus_1756150000791.jpeg";
+import pascoaImage from "@assets/pascoa_1756150293610.jpg";
 
 interface BooksCarouselSectionProps {
   onCTAClick: () => void;
@@ -38,6 +40,20 @@ export default function BooksCarouselSection({ onCTAClick }: BooksCarouselSectio
       description: "Mais de 300 versículos bíblicos para estudos.",
       pages: 20,
       image: versiculosImage,
+      isPopular: false
+    },
+    {
+      title: "Colorindo com Jesus",
+      description: "Uma jornada de fé e alegria em cada desenho bíblico para colorir.",
+      pages: 36,
+      image: jesusImage,
+      isPopular: false
+    },
+    {
+      title: "Páscoa Cristã",
+      description: "A verdadeira alegria da Páscoa em desenhos bíblicos para colorir, celebrando fé, amor e esperança.",
+      pages: 59,
+      image: pascoaImage,
       isPopular: false
     }
   ];
