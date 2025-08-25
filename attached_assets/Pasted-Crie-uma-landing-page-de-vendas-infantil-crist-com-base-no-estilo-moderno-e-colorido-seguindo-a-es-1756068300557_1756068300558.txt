@@ -1,0 +1,101 @@
+Crie uma landing page de vendas infantil cristã com base no estilo moderno e colorido, seguindo a estrutura abaixo:
+
+Estrutura da Página
+
+Seção Hero (Topo)
+
+Fundo azul vibrante.
+
+Imagem ilustrada de crianças sorrindo e colorindo livros cristãos.
+
+Título em destaque: “Bíblia Goods - ColoriMente”.
+
+Subtítulo: “Desenvolvimento infantil na hora de pintar com foco, disciplina e criatividade.”
+
+Botão verde chamativo: “Quero Bíblia Goods”.
+
+Tags/selos de uso: “Células”, “Escola Dominical”, “Devocional Familiar”, “Pedagogia”.
+
+Por que escolher nossos livros?
+
+Quatro cards com ícones simples e coloridos.
+
+Cada card com título + descrição curta:
+
+Células: atividades lúdicas que reforçam princípios bíblicos.
+
+Escola Dominical: material complementar dinâmico.
+
+Devocional Familiar: momentos de união em casa.
+
+Pedagogia: desenvolvimento motor e artístico.
+
+Carrossel de Livros
+
+Título: “Conheça alguns dos nossos livros de colorir”.
+
+Subtítulo: “Livros exclusivos que unem fé, criatividade e aprendizado.”
+
+Destaque 3 capas de livros ilustrados: A Arca de Noé, Davi e Golias, Jonas e a Baleia.
+
+Botão verde novamente: “Quero Bíblia Goods”.
+
+Benefícios da Bíblia Goods
+
+Quatro cards coloridos com ícones:
+
+Menos Telas: reduz tempo em eletrônicos.
+
+Mais Foco: disciplina e concentração.
+
+Fé Viva: incentivo ao devocional familiar.
+
+Memória Afetiva: lembranças especiais.
+
+Prova Social (Depoimentos)
+
+Título: “O que nossos clientes dizem”.
+
+Mostre 3 prints simulados de conversas positivas.
+
+Avaliação média: ⭐ 4,9/5 com +300 avaliações.
+
+Oferta Especial (Pricing Table)
+
+Dois planos comparativos em caixas.
+
+Básico – R$10,00: 30 livros cristãos para colorir.
+
+Premium – R$17,00 (mais vendido): inclui todos os bônus extras (cartões, desafios, atividades, plano devocional).
+
+Botões verdes chamativos: “Escolher Pacote”.
+
+FAQ + Garantia
+
+FAQ simples (3 perguntas):
+
+Como recebo os livros?
+
+Posso imprimir quantas vezes quiser?
+
+Qual a faixa etária recomendada?
+
+Box de destaque verde: “Garantia de 7 dias” → “Se não ficar satisfeito, devolvemos seu dinheiro sem perguntas.”
+
+Rodapé
+
+Texto: © 2025 ColoriMente | Todos os direitos reservados.
+
+Fundo azul como o topo para manter a unidade visual.
+
+Estilo Visual
+
+Paleta: Azul (#4285F4), Verde (#00A550), Amarelo (#FFD700), Laranja (#FF6B35).
+
+Tipografia: Moderna, arredondada, fácil leitura.
+
+Botões: Verde com bordas arredondadas, efeito hover.
+
+Imagens: Ilustrações infantis 3D estilo desenho animado.
+
+Layout: Cards com sombras suaves e cantos arredondados.
