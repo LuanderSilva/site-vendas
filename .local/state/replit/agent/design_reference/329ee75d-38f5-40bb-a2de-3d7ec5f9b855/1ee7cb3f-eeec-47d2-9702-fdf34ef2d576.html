@@ -1,0 +1,543 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bíblia Goods - ColoriMente | Livros de Colorir Cristãos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    'brand-blue': '#4285F4',
+                    'brand-green': '#00A550',
+                    'brand-yellow': '#FFD700',
+                    'brand-orange': '#FF6B35'
+                },
+                fontFamily: {
+                    'inter': ['Inter', 'sans-serif']
+                }
+            }
+        }
+    };
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="font-inter bg-gray-50">
+    <!-- @COMPONENT: Header [navigation and branding] -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-brand-blue rounded-full flex items-center justify-center">
+                    <i class="fas fa-book text-white text-lg"></i>
+                </div>
+                <h1 class="text-2xl font-bold text-brand-blue">ColoriMente</h1>
+            </div>
+            <button class="bg-brand-green text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition-colors" data-event="click:scrollToPricing">
+                Quero Bíblia Goods
+            </button>
+        </div>
+    </header>
+    <!-- @END_COMPONENT: Header -->
+
+    <!-- @COMPONENT: HeroSection [main value proposition and CTA] -->
+    <section class="bg-gradient-to-br from-brand-blue to-blue-600 text-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <h1 class="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                        Bíblia Goods - <span class="text-brand-yellow">ColoriMente</span>
+                    </h1>
+                    <p class="text-xl mb-8 opacity-90 leading-relaxed">
+                        Desenvolvimento infantil na hora de pintar com foco, disciplina e criatividade.
+                    </p>
+                    
+                    <!-- Tags/Selos -->
+                    <div class="flex flex-wrap gap-3 mb-8 justify-center lg:justify-start">
+                        <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm font-medium">
+                            <i class="fas fa-users mr-2"></i>Células
+                        </span>
+                        <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm font-medium">
+                            <i class="fas fa-school mr-2"></i>Escola Dominical
+                        </span>
+                        <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm font-medium">
+                            <i class="fas fa-home mr-2"></i>Devocional Familiar
+                        </span>
+                        <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm font-medium">
+                            <i class="fas fa-graduation-cap mr-2"></i>Pedagogia
+                        </span>
+                    </div>
+
+                    <button class="bg-brand-green text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-green-600 transform hover:scale-105 transition-all shadow-lg" data-event="click:scrollToPricing">
+                        <i class="fas fa-shopping-cart mr-2"></i>Quero Bíblia Goods
+                    </button>
+                </div>
+                
+                <div class="text-center">
+                    <!-- Happy children coloring Christian books -->
+                    <img src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" alt="Crianças sorrindo e colorindo livros cristãos" class="rounded-2xl shadow-2xl mx-auto transform hover:scale-105 transition-transform" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: HeroSection -->
+
+    <!-- @COMPONENT: WhyChooseSection [four benefit cards] -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Por que escolher nossos livros?</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Desenvolvemos materiais que combinam fé, aprendizado e diversão para o crescimento saudável das crianças.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- @MAP: benefits.map(benefit => ( -->
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow text-center border border-blue-200">
+                    <div class="w-16 h-16 bg-brand-blue rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-users text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Células</h3>
+                    <p class="text-gray-600 leading-relaxed">Atividades lúdicas que reforçam princípios bíblicos de forma divertida e envolvente.</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow text-center border border-green-200">
+                    <div class="w-16 h-16 bg-brand-green rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-school text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Escola Dominical</h3>
+                    <p class="text-gray-600 leading-relaxed">Material complementar dinâmico para enriquecer as aulas e engajar os pequenos.</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow text-center border border-yellow-200">
+                    <div class="w-16 h-16 bg-brand-yellow rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-home text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Devocional Familiar</h3>
+                    <p class="text-gray-600 leading-relaxed">Momentos especiais de união em casa, fortalecendo os laços familiares.</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-orange-50 to-orange-100 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow text-center border border-orange-200">
+                    <div class="w-16 h-16 bg-brand-orange rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-graduation-cap text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Pedagogia</h3>
+                    <p class="text-gray-600 leading-relaxed">Desenvolvimento motor e artístico através de atividades educativas estruturadas.</p>
+                </div>
+                <!-- @END_MAP )) -->
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: WhyChooseSection -->
+
+    <!-- @COMPONENT: BooksCarousel [featured coloring books showcase] -->
+    <section class="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Conheça alguns dos nossos livros de colorir</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Livros exclusivos que unem fé, criatividade e aprendizado em histórias bíblicas emocionantes.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- Bible stories illustrations - Noah's Ark -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=500" alt="Livro de colorir A Arca de Noé" class="w-full h-64 object-cover rounded-xl mb-4" />
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">A Arca de Noé</h3>
+                    <p class="text-gray-600 mb-4">Aventura épica de fé e obediência com animais adoráveis para colorir.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-brand-green font-semibold">📚 15 páginas</span>
+                        <span class="text-brand-blue font-semibold">🎨 Ilustrações 3D</span>
+                    </div>
+                </div>
+
+                <!-- Bible stories illustrations - David and Goliath -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border-2 border-brand-yellow">
+                    <div class="bg-brand-yellow text-black px-3 py-1 rounded-full text-sm font-bold mb-4 inline-block">
+                        ⭐ Mais Popular
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=500" alt="Livro de colorir Davi e Golias" class="w-full h-64 object-cover rounded-xl mb-4" />
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Davi e Golias</h3>
+                    <p class="text-gray-600 mb-4">História inspiradora de coragem e fé em Deus para enfrentar desafios.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-brand-green font-semibold">📚 18 páginas</span>
+                        <span class="text-brand-blue font-semibold">🎨 Ilustrações 3D</span>
+                    </div>
+                </div>
+
+                <!-- Bible stories illustrations - Jonah and the whale -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                    <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=500" alt="Livro de colorir Jonas e a Baleia" class="w-full h-64 object-cover rounded-xl mb-4" />
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Jonas e a Baleia</h3>
+                    <p class="text-gray-600 mb-4">Jornada incrível de arrependimento e segunda chance através do perdão.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-brand-green font-semibold">📚 12 páginas</span>
+                        <span class="text-brand-blue font-semibold">🎨 Ilustrações 3D</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button class="bg-brand-green text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-green-600 transform hover:scale-105 transition-all shadow-lg" data-event="click:scrollToPricing">
+                    <i class="fas fa-shopping-cart mr-2"></i>Quero Bíblia Goods
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: BooksCarousel -->
+
+    <!-- @COMPONENT: BenefitsSection [four key benefits with icons] -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Benefícios da Bíblia Goods</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Transforme o tempo das crianças em momentos de crescimento, fé e desenvolvimento saudável.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-8 bg-gradient-to-br from-red-50 to-red-100 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-red-200">
+                    <div class="w-20 h-20 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-mobile-alt text-white text-2xl line-through"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Menos Telas</h3>
+                    <p class="text-gray-600">Reduz significativamente o tempo em dispositivos eletrônicos de forma natural e divertida.</p>
+                </div>
+
+                <div class="text-center p-8 bg-gradient-to-br from-brand-blue/10 to-brand-blue/20 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-blue-200">
+                    <div class="w-20 h-20 bg-brand-blue rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-bullseye text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Mais Foco</h3>
+                    <p class="text-gray-600">Desenvolve disciplina e concentração através de atividades direcionadas e estimulantes.</p>
+                </div>
+
+                <div class="text-center p-8 bg-gradient-to-br from-brand-green/10 to-brand-green/20 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-green-200">
+                    <div class="w-20 h-20 bg-brand-green rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-heart text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Fé Viva</h3>
+                    <p class="text-gray-600">Incentiva o devocional familiar e fortalece os valores cristãos no dia a dia.</p>
+                </div>
+
+                <div class="text-center p-8 bg-gradient-to-br from-brand-orange/10 to-brand-orange/20 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-orange-200">
+                    <div class="w-20 h-20 bg-brand-orange rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-camera text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Memória Afetiva</h3>
+                    <p class="text-gray-600">Cria lembranças especiais e momentos únicos entre pais e filhos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: BenefitsSection -->
+
+    <!-- @COMPONENT: SocialProofSection [testimonials and ratings] -->
+    <section class="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">O que nossos clientes dizem</h2>
+                <div class="flex items-center justify-center space-x-2 mb-6">
+                    <div class="flex text-yellow-400 text-2xl">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="text-xl font-bold text-gray-800">4,9/5</span>
+                    <span class="text-gray-600">com +300 avaliações</span>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Family devotion time testimonial 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://pixabay.com/get/g21e540879e344cd108c4a6df86f6fdbb0a9f7dee3e55bb0721b5dc151a32909fe48cf787713cf8a04baae502559c73744c5413accedb71a03ccca81aae302c2a_1280.jpg" alt="Mãe satisfeita com produto" class="w-12 h-12 rounded-full mr-4" />
+                        <div>
+                            <h4 class="font-bold text-gray-800">Ana Paula</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Meus filhos adoraram! Agora nosso devocional em família ficou muito mais divertido e participativo. Recomendo!"</p>
+                </div>
+
+                <!-- Family devotion time testimonial 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=60&h=60" alt="Pai satisfeito com produto" class="w-12 h-12 rounded-full mr-4" />
+                        <div>
+                            <h4 class="font-bold text-gray-800">Carlos Silva</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Qualidade excepcional! As ilustrações são lindas e as crianças ficam concentradas por horas colorindo."</p>
+                </div>
+
+                <!-- Family devotion time testimonial 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=60&h=60" alt="Professora satisfeita com produto" class="w-12 h-12 rounded-full mr-4" />
+                        <div>
+                            <h4 class="font-bold text-gray-800">Profª Maria</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Uso na escola dominical e as crianças pedem mais! Material educativo e evangélico de primeira qualidade."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: SocialProofSection -->
+
+    <!-- @COMPONENT: PricingSection [comparison table for Basic vs Premium] -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Oferta Especial</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Escolha o pacote ideal para sua família e comece hoje mesmo a transformar os momentos de diversão em aprendizado.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Basic Plan -->
+                <div class="bg-white border-2 border-gray-200 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Pacote Básico</h3>
+                        <div class="text-4xl font-bold text-brand-blue mb-2">R$10,00</div>
+                        <p class="text-gray-600">Pagamento único</p>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-brand-green mr-3"></i>
+                            <span>30 livros cristãos para colorir</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-brand-green mr-3"></i>
+                            <span>Histórias bíblicas ilustradas</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-brand-green mr-3"></i>
+                            <span>Impressão ilimitada</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-brand-green mr-3"></i>
+                            <span>Suporte por email</span>
+                        </li>
+                    </ul>
+                    
+                    <button class="w-full bg-gray-600 text-white py-4 rounded-full font-bold text-lg hover:bg-gray-700 transition-colors" data-event="click:selectBasicPlan">
+                        Escolher Pacote
+                    </button>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="bg-gradient-to-br from-brand-green to-green-600 text-white rounded-2xl p-8 shadow-2xl transform scale-105 relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-brand-yellow text-black px-6 py-2 rounded-full font-bold text-sm">
+                            🔥 MAIS VENDIDO
+                        </span>
+                    </div>
+                    
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold mb-4">Pacote Premium</h3>
+                        <div class="text-4xl font-bold mb-2">R$17,00</div>
+                        <p class="text-green-100">Pagamento único</p>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-white mr-3"></i>
+                            <span>30 livros cristãos para colorir</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-white mr-3"></i>
+                            <span>Cartões de versículos</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-white mr-3"></i>
+                            <span>Desafios e atividades extras</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-white mr-3"></i>
+                            <span>Plano devocional familiar</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-white mr-3"></i>
+                            <span>Suporte prioritário</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-white mr-3"></i>
+                            <span>Atualizações gratuitas</span>
+                        </li>
+                    </ul>
+                    
+                    <button class="w-full bg-white text-brand-green py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors" data-event="click:selectPremiumPlan">
+                        Escolher Pacote
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: PricingSection -->
+
+    <!-- @COMPONENT: FAQSection [frequently asked questions with guarantee] -->
+    <section class="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Perguntas Frequentes</h2>
+                <p class="text-xl text-gray-600">Tire suas dúvidas sobre nossos livros de colorir cristãos.</p>
+            </div>
+
+            <!-- @STATE: openFAQ:string = null -->
+            <div class="space-y-4 mb-12">
+                <div class="bg-white rounded-2xl shadow-lg" data-faq="delivery">
+                    <button class="w-full p-6 text-left flex items-center justify-between font-bold text-lg text-gray-800 hover:text-brand-blue transition-colors" data-event="click:toggleFAQ">
+                        Como recebo os livros?
+                        <i class="fas fa-chevron-down transform transition-transform" data-icon="chevron"></i>
+                    </button>
+                    <div class="px-6 pb-6 text-gray-600" data-content="delivery">
+                        <p>Após a compra, você receberá imediatamente por email todos os arquivos em PDF para download. Você pode imprimir quantas vezes quiser em casa ou numa gráfica.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg" data-faq="printing">
+                    <button class="w-full p-6 text-left flex items-center justify-between font-bold text-lg text-gray-800 hover:text-brand-blue transition-colors" data-event="click:toggleFAQ">
+                        Posso imprimir quantas vezes quiser?
+                        <i class="fas fa-chevron-down transform transition-transform" data-icon="chevron"></i>
+                    </button>
+                    <div class="px-6 pb-6 text-gray-600 hidden" data-content="printing">
+                        <p>Sim! Com sua compra você tem direito de impressão ilimitada para uso pessoal e familiar. Pode imprimir para seus filhos, netos, aulas ou qualquer atividade não comercial.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg" data-faq="age">
+                    <button class="w-full p-6 text-left flex items-center justify-between font-bold text-lg text-gray-800 hover:text-brand-blue transition-colors" data-event="click:toggleFAQ">
+                        Qual a faixa etária recomendada?
+                        <i class="fas fa-chevron-down transform transition-transform" data-icon="chevron"></i>
+                    </button>
+                    <div class="px-6 pb-6 text-gray-600 hidden" data-content="age">
+                        <p>Nossos livros são ideais para crianças de 3 a 12 anos. Temos diferentes níveis de complexidade para acompanhar o desenvolvimento da criança.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Guarantee Box -->
+            <div class="bg-gradient-to-r from-brand-green to-green-600 text-white p-8 rounded-2xl text-center shadow-xl">
+                <div class="flex items-center justify-center mb-4">
+                    <i class="fas fa-shield-alt text-4xl mr-4"></i>
+                    <h3 class="text-2xl font-bold">Garantia de 7 dias</h3>
+                </div>
+                <p class="text-xl text-green-100">Se não ficar satisfeito, devolvemos seu dinheiro sem perguntas.</p>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: FAQSection -->
+
+    <!-- @COMPONENT: FloatingCTA [sticky call-to-action button] -->
+    <div class="fixed bottom-6 right-6 z-50 lg:hidden">
+        <button class="bg-brand-green text-white px-6 py-4 rounded-full font-bold shadow-2xl hover:bg-green-600 transition-colors animate-pulse" data-event="click:scrollToPricing">
+            <i class="fas fa-shopping-cart mr-2"></i>Comprar Agora
+        </button>
+    </div>
+    <!-- @END_COMPONENT: FloatingCTA -->
+
+    <!-- @COMPONENT: Footer [copyright and branding] -->
+    <footer class="bg-gradient-to-br from-brand-blue to-blue-600 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex items-center justify-center space-x-3 mb-6">
+                <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
+                    <i class="fas fa-book text-white text-xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold">ColoriMente</h3>
+            </div>
+            <p class="text-blue-100 mb-6">Desenvolvendo fé, criatividade e aprendizado através da arte</p>
+            <div class="border-t border-blue-400 pt-6">
+                <p class="text-blue-200">© 2025 ColoriMente | Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <script>
+        // TODO: Implement business logic, API calls, or state management
+        (function() {
+            // Smooth scrolling for anchor links
+            document.addEventListener('click', function(e) {
+                if (e.target.matches('[data-event*="scrollToPricing"]')) {
+                    e.preventDefault();
+                    document.getElementById('pricing').scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+
+            // FAQ Toggle functionality
+            document.addEventListener('click', function(e) {
+                if (e.target.matches('[data-event*="toggleFAQ"]') || e.target.closest('[data-event*="toggleFAQ"]')) {
+                    e.preventDefault();
+                    const button = e.target.closest('[data-event*="toggleFAQ"]');
+                    const faqContainer = button.closest('[data-faq]');
+                    const content = faqContainer.querySelector('[data-content]');
+                    const icon = button.querySelector('[data-icon="chevron"]');
+                    
+                    content.classList.toggle('hidden');
+                    icon.classList.toggle('rotate-180');
+                }
+            });
+
+            // Form submission placeholders
+            document.addEventListener('click', function(e) {
+                if (e.target.matches('[data-event*="selectBasicPlan"]')) {
+                    alert('Redirecionando para checkout do Pacote Básico...');
+                    // TODO: Integrate with payment processor
+                }
+                if (e.target.matches('[data-event*="selectPremiumPlan"]')) {
+                    alert('Redirecionando para checkout do Pacote Premium...');
+                    // TODO: Integrate with payment processor
+                }
+            });
+
+            // Intersection Observer for animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observe elements for fade-in animation
+            document.querySelectorAll('section > div').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
+            });
+        })();
+    </script>
+</body>
+</html>
