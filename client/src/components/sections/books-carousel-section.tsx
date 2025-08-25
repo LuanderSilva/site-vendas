@@ -54,51 +54,55 @@ export default function BooksCarouselSection({ onCTAClick }: BooksCarouselSectio
           </p>
         </div>
 
-        <Carousel
-          opts={{
-            align: "start",
-            loop: true,
-          }}
-          className="w-full max-w-5xl mx-auto mb-12"
-        >
-          <CarouselContent className="-ml-2 md:-ml-4">
-            {books.map((book, index) => (
-              <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
-                <div 
-                  className={`bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow ${book.isPopular ? 'border-2 border-brand-yellow' : ''}`}
-                  data-testid={`card-book-${index}`}
-                >
-                  {book.isPopular && (
-                    <div className="bg-brand-yellow text-black px-3 py-1 rounded-full text-sm font-bold mb-4 inline-flex items-center">
-                      <Star className="mr-1" size={16} />
-                      Mais Popular
+        <div className="relative w-full max-w-5xl mx-auto mb-12">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {books.map((book, index) => (
+                <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
+                  <div 
+                    className={`bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow ${book.isPopular ? 'border-2 border-brand-yellow' : ''}`}
+                    data-testid={`card-book-${index}`}
+                  >
+                    {book.isPopular && (
+                      <div className="bg-brand-yellow text-black px-3 py-1 rounded-full text-sm font-bold mb-4 inline-flex items-center">
+                        <Star className="mr-1" size={16} />
+                        Mais Popular
+                      </div>
+                    )}
+                    <img 
+                      src={book.image} 
+                      alt={`Livro de colorir ${book.title}`} 
+                      className="w-full h-64 object-cover rounded-xl mb-4"
+                      data-testid={`img-book-${index}`}
+                    />
+                    <h3 className="text-xl font-bold text-gray-800 mb-2" data-testid={`text-book-title-${index}`}>
+                      {book.title}
+                    </h3>
+                    <p className="text-gray-600 mb-4" data-testid={`text-book-description-${index}`}>
+                      {book.description}
+                    </p>
+                    <div className="flex items-center justify-between">
+                      <span className="text-brand-green font-semibold" data-testid={`text-book-pages-${index}`}>
+                        📚 {book.pages} páginas
+                      </span>
+                      <span className="text-brand-blue font-semibold">🎨 Ilustrações 3D</span>
                     </div>
-                  )}
-                  <img 
-                    src={book.image} 
-                    alt={`Livro de colorir ${book.title}`} 
-                    className="w-full h-64 object-cover rounded-xl mb-4"
-                    data-testid={`img-book-${index}`}
-                  />
-                  <h3 className="text-xl font-bold text-gray-800 mb-2" data-testid={`text-book-title-${index}`}>
-                    {book.title}
-                  </h3>
-                  <p className="text-gray-600 mb-4" data-testid={`text-book-description-${index}`}>
-                    {book.description}
-                  </p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-brand-green font-semibold" data-testid={`text-book-pages-${index}`}>
-                      📚 {book.pages} páginas
-                    </span>
-                    <span className="text-brand-blue font-semibold">🎨 Ilustrações 3D</span>
                   </div>
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            
+            {/* Setas customizadas sobrepostas */}
+            <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white border-0 shadow-lg" />
+            <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white border-0 shadow-lg" />
+          </Carousel>
+        </div>
 
         <div className="text-center">
           <Button 
