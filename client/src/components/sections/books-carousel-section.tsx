@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { ShoppingCart, Star } from "lucide-react";
 import noahArkImage from "@assets/Gemini_Generated_Image_zif1vbzif1vbzif1_1756074374591.png";
+import davidGoliathImage from "@assets/Davi e Golias_1756076356614.jpeg";
+import babyMosesImage from "@assets/bebemoises_1756076267525.jpeg";
 
 interface BooksCarouselSectionProps {
   onCTAClick: () => void;
@@ -18,15 +20,15 @@ export default function BooksCarouselSection({ onCTAClick }: BooksCarouselSectio
     {
       title: "Davi e Golias",
       description: "História inspiradora de coragem e fé em Deus para enfrentar desafios.",
-      pages: 18,
-      image: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=500",
+      pages: 13,
+      image: davidGoliathImage,
       isPopular: true
     },
     {
-      title: "Jonas e a Baleia",
-      description: "Jornada incrível de arrependimento e segunda chance através do perdão.",
+      title: "O bebê Moisés",
+      description: "A emocionante história do bebê que foi salvo das águas por Deus.",
       pages: 12,
-      image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=500",
+      image: babyMosesImage,
       isPopular: false
     }
   ];
