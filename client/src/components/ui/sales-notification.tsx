@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Check, ShoppingBag, X } from "lucide-react";
+import { Check, ShoppingBag } from "lucide-react";
 
 const salesData = [
   { name: "Maria Silva", region: "São Paulo - SP", package: "Premium", time: "há 2 minutos" },
@@ -49,35 +49,22 @@ export default function SalesNotification() {
     };
   }, [currentIndex]);
 
-  const handleClose = () => {
-    setIsVisible(false);
-  };
-
   if (!isVisible) return null;
 
   return (
     <div 
-      className="fixed bottom-6 left-6 z-50 max-w-sm"
+      className="fixed top-6 right-6 z-50 max-w-sm"
       data-testid="sales-notification"
     >
-      <div className="bg-white rounded-2xl shadow-2xl border border-gray-200 p-4 animate-in slide-in-from-left duration-500">
-        <div className="flex items-start justify-between mb-3">
-          <div className="flex items-center">
-            <div className="w-8 h-8 bg-brand-green rounded-full flex items-center justify-center mr-3">
-              <Check className="text-white" size={16} />
-            </div>
-            <div className="flex items-center">
-              <ShoppingBag className="text-brand-green mr-1" size={16} />
-              <span className="text-sm font-semibold text-gray-800">Nova compra!</span>
-            </div>
+      <div className="bg-white rounded-2xl shadow-2xl border border-gray-200 p-4 animate-in slide-in-from-right duration-500">
+        <div className="flex items-center mb-3">
+          <div className="w-8 h-8 bg-brand-green rounded-full flex items-center justify-center mr-3">
+            <Check className="text-white" size={16} />
           </div>
-          <button 
-            onClick={handleClose}
-            className="text-gray-400 hover:text-gray-600 transition-colors"
-            data-testid="button-close-notification"
-          >
-            <X size={16} />
-          </button>
+          <div className="flex items-center">
+            <ShoppingBag className="text-brand-green mr-1" size={16} />
+            <span className="text-sm font-semibold text-gray-800">Nova compra!</span>
+          </div>
         </div>
         
         <div className="space-y-1">

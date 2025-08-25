@@ -44,8 +44,11 @@ export default function PricingSection() {
   ];
 
   const handlePlanSelection = (planName: string) => {
-    alert(`Redirecionando para checkout do ${planName}...`);
-    // TODO: Integrate with payment processor
+    if (planName === "Pacote Básico") {
+      window.open("https://checkout.pequenosartistas.online/VCCL1O8SC6XM", "_blank");
+    } else if (planName === "Pacote Premium") {
+      window.open("https://checkout.pequenosartistas.online/VCCL1O8SC706", "_blank");
+    }
   };
 
   return (
