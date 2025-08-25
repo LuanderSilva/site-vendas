@@ -28,7 +28,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="font-inter bg-gray-50">
+    <div className="font-poppins bg-gray-50">
       {/* Main Content */}
       <main>
         <HeroSection onCTAClick={scrollToPricing} />

@@ -8,7 +8,7 @@ interface HeroSectionProps {
 
 export default function HeroSection({ onCTAClick }: HeroSectionProps) {
   return (
-    <section className="bg-gradient-to-br from-brand-blue to-blue-600 text-white py-20" data-testid="section-hero">
+    <section className="bg-gradient-to-br from-brand-blue to-blue-600 text-white py-20 relative overflow-hidden" data-testid="section-hero">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left order-1 lg:order-1">
@@ -69,6 +69,20 @@ export default function HeroSection({ onCTAClick }: HeroSectionProps) {
             </Button>
           </div>
         </div>
+      </div>
+      
+      {/* Efeito de ondas na parte inferior */}
+      <div className="absolute bottom-0 left-0 right-0">
+        <svg
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+          className="relative block w-full h-16"
+        >
+          <path
+            d="M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z"
+            className="fill-gray-50"
+          />
+        </svg>
       </div>
     </section>
   );
