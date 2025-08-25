@@ -1,17 +1,21 @@
 import { Button } from "@/components/ui/button";
-import { Check, Star } from "lucide-react";
+import { Check, Star, X } from "lucide-react";
 
 export default function PricingSection() {
   const plans = [
     {
       name: "Pacote Básico",
-      price: "R$10,00",
+      price: "R$9,99",
       description: "Pagamento único",
       features: [
-        "30 livros cristãos para colorir",
-        "Histórias bíblicas ilustradas",
-        "Impressão ilimitada",
-        "Suporte por email"
+        { text: "30 livros cristãos para colorir", included: true },
+        { text: "Histórias bíblicas ilustradas", included: true },
+        { text: "Impressão ilimitada", included: true },
+        { text: "Suporte por email", included: true },
+        { text: "Cartões Para Memorização", included: false },
+        { text: "Livro de Atividades Cristãs", included: false },
+        { text: "Aventuras Bíblicas", included: false },
+        { text: "Desenhos diversos para colorir", included: false }
       ],
       buttonText: "Escolher Pacote",
       buttonStyle: "bg-gray-600 text-white hover:bg-gray-700",
@@ -19,15 +23,19 @@ export default function PricingSection() {
     },
     {
       name: "Pacote Premium",
-      price: "R$17,00",
+      price: "R$16,99",
       description: "Pagamento único",
       features: [
-        "30 livros cristãos para colorir",
-        "Cartões de versículos",
-        "Desafios e atividades extras",
-        "Plano devocional familiar",
-        "Suporte prioritário",
-        "Atualizações gratuitas"
+        { text: "30 livros cristãos para colorir", included: true },
+        { text: "Cartões de versículos", included: true },
+        { text: "Desafios e atividades extras", included: true },
+        { text: "Plano devocional familiar", included: true },
+        { text: "Suporte prioritário", included: true },
+        { text: "Atualizações gratuitas", included: true },
+        { text: "Cartões Para Memorização", included: true },
+        { text: "Livro de Atividades Cristãs", included: true },
+        { text: "Aventuras Bíblicas", included: true },
+        { text: "Desenhos diversos para colorir", included: true }
       ],
       buttonText: "Escolher Pacote",
       buttonStyle: "bg-white text-brand-green hover:bg-gray-100",
@@ -86,8 +94,14 @@ export default function PricingSection() {
               <ul className="space-y-4 mb-8">
                 {plan.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-center" data-testid={`text-plan-feature-${index}-${featureIndex}`}>
-                    <Check className={`mr-3 ${plan.isPopular ? 'text-white' : 'text-brand-green'}`} size={20} />
-                    <span className={plan.isPopular ? 'text-white' : 'text-gray-700'}>{feature}</span>
+                    {feature.included ? (
+                      <Check className={`mr-3 ${plan.isPopular ? 'text-white' : 'text-brand-green'}`} size={20} />
+                    ) : (
+                      <X className="mr-3 text-red-500" size={20} />
+                    )}
+                    <span className={`${plan.isPopular ? 'text-white' : 'text-gray-700'} ${!feature.included ? 'opacity-60' : ''}`}>
+                      {feature.text}
+                    </span>
                   </li>
                 ))}
               </ul>
