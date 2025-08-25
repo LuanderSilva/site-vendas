@@ -1,54 +1,9 @@
 [build]
-  # Diretório onde estão os arquivos do projeto
   base = "."
-  
-<<<<<<< HEAD
-  # Comando para fazer o build da aplicação (configuração específica para Netlify)
-  command = "vite build --config vite.config.netlify.ts"
-  
-  # Diretório onde ficam os arquivos buildados (conforme vite.config.ts)
-  publish = "dist/public"
-=======
-  # Comando para fazer o build da aplicação (apenas frontend)
   command = "vite build"
-  
-  # Diretório onde ficam os arquivos buildados
-  publish = "client/dist"
->>>>>>> 4366fcb83c384559c9dec838fa69b1bf0e0258db
+  publish = "dist/public"
 
-# Configurações para SPA (Single Page Application)
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-
-# Configurações de headers para melhor performance
-[[headers]]
-  for = "/static/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-[[headers]]
-  for = "*.js"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-[[headers]]
-  for = "*.css"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-[[headers]]
-  for = "*.png"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-[[headers]]
-  for = "*.jpg"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-[[headers]]
-  for = "*.jpeg"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
