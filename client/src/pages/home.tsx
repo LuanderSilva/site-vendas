@@ -7,6 +7,7 @@ import SocialProofSection from "@/components/sections/social-proof-section";
 import PricingSection from "@/components/sections/pricing-section";
 import FAQSection from "@/components/sections/faq-section";
 import FloatingCTA from "@/components/ui/floating-cta";
+import SalesNotification from "@/components/ui/sales-notification";
 import { Button } from "@/components/ui/button";
 import { Book, ShoppingCart } from "lucide-react";
 
@@ -57,6 +58,7 @@ export default function Home() {
       </footer>
 
       <FloatingCTA onClick={scrollToPricing} />
+      <SalesNotification />
     </div>
   );
 }
