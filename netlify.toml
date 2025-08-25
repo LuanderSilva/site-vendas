@@ -2,11 +2,11 @@
   # Diretório onde estão os arquivos do projeto
   base = "."
   
-  # Comando para fazer o build da aplicação (apenas frontend)
-  command = "vite build"
+  # Comando para fazer o build da aplicação (configuração específica para Netlify)
+  command = "vite build --config vite.config.netlify.ts"
   
-  # Diretório onde ficam os arquivos buildados
-  publish = "client/dist"
+  # Diretório onde ficam os arquivos buildados (conforme vite.config.ts)
+  publish = "dist/public"
 
 # Configurações para SPA (Single Page Application)
 [[redirects]]
